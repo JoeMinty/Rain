@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dsys.iml" filepath="$PROJECT_DIR$/dsys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rain.iml" filepath="$PROJECT_DIR$/rain.iml" />
     </modules>
   </component>
 </project>

@@ -6,7 +6,13 @@ Maybe life is a journey.This project create on a rainy night.
 # part1
 ## module bigdata
     1.搭建hadoop分布式集群环境（先不采用容器形式，不考虑ha），主要涉及hdfs，yarn，mapreduce。最后提供一键式部署脚本。
-    2.分装大数据相关接口
+    2.封装大数据相关接口
     
 # part2
 ## module ai
+
+# part3 
+## module common
+
+# part4
+## module shell scripts

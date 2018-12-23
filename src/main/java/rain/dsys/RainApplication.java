@@ -10,15 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 
-@Controller
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
 public class RainApplication {
-
-	@RequestMapping("/")
-	@ResponseBody
-	String home() {
-		return "Hello World!";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(RainApplication.class, args);
