@@ -9,7 +9,7 @@ import rain.dsys.bigdata.service.ZookeeperService;
 import java.util.concurrent.CountDownLatch;
 
 @Service
-public class ZookeeperImpl implements ZookeeperService, Watcher {
+public class ZookeeperServiceImpl implements ZookeeperService, Watcher {
 
     private static final String REGISTRY_PATH = "/registry";
 
@@ -19,15 +19,15 @@ public class ZookeeperImpl implements ZookeeperService, Watcher {
 
     private ZooKeeper zk;
 
-    public ZookeeperImpl(String zkServers) {
-        try {
-            zk = new ZooKeeper(zkServers, SESSION_TIMEOUT, this);
-            latch.await();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public ZookeeperServiceImpl(String zkServers) {
+//        try {
+//            zk = new ZooKeeper(zkServers, SESSION_TIMEOUT, this);
+//            latch.await();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 
     @Override
