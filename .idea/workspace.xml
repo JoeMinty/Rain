@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb4034aa-2ecd-4108-ac6b-212fe384abd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/controller/SparkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/SparkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/SparkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/scripts/zookeeper.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rain/dsys/bigdata/service/ZookeeperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rain/dsys/bigdata/service/ZookeeperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rain/dsys/bigdata/service/serviceImpl/ZookeeperImpl.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +27,7 @@
           <entry key="iml" value="1" />
           <entry key="java" value="12" />
           <entry key="md" value="1" />
+          <entry key="sh" value="1" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="1" />
         </counts>
@@ -41,6 +37,7 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="12" />
           <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
         </counts>
@@ -50,6 +47,7 @@
           <entry key="dummy" value="7" />
           <entry key="java" value="894" />
           <entry key="md" value="143" />
+          <entry key="sh" value="51" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="13" />
         </counts>
@@ -58,7 +56,7 @@
         <counts>
           <entry key="JAVA" value="894" />
           <entry key="Markdown" value="143" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="58" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="13" />
         </counts>
@@ -103,15 +101,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/ZookeeperService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -120,11 +109,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="155">
+              <caret line="68" column="3" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/zookeeper.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="123" selection-start-column="123" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -205,6 +206,7 @@
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/controller/SparkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/scripts/zookeeper.sh" />
       </list>
     </option>
   </component>
@@ -267,46 +269,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dsys" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -315,7 +277,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545749333423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545840122022" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -368,7 +330,7 @@
     <frame x="57" y="43" width="1383" height="857" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25354213" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25354213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -378,13 +340,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33071896" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33071896" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.59607846" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -396,6 +358,35 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25354213" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33071896" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.59607846" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -524,8 +515,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="155">
+          <caret line="68" column="3" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/zookeeper.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="123" selection-start-column="123" selection-end-column="123" />
         </state>
       </provider>
     </entry>
