@@ -2,14 +2,12 @@ package rain.dsys.bigdata.service.serviceImpl;
 
 import org.apache.zookeeper.*;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import rain.dsys.bigdata.service.ZookeeperService;
 
 import java.util.concurrent.CountDownLatch;
 
 @Service
-public class ZookeeperServiceImpl implements ZookeeperService, Watcher {
+public class ZookeeperServiceImpl implements ZookeeperService{
 
     private static final String REGISTRY_PATH = "/registry";
 
@@ -19,19 +17,8 @@ public class ZookeeperServiceImpl implements ZookeeperService, Watcher {
 
     private ZooKeeper zk;
 
-//    public ZookeeperServiceImpl(String zkServers) {
-//        try {
-//            zk = new ZooKeeper(zkServers, SESSION_TIMEOUT, this);
-//            latch.await();
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-
 
     @Override
-    @RequestMapping(value = "/zktest", method = RequestMethod.GET)
     public String zookeeperTest() {
 
         Watcher watcher = new Watcher() {
@@ -43,8 +30,8 @@ public class ZookeeperServiceImpl implements ZookeeperService, Watcher {
         String value = null;
         try {
             // 这里测试docker部署的zk服务
-            final ZooKeeper zookeeper = new ZooKeeper("127.0.0.1:2181", SESSION_TIMEOUT, watcher);
-            final byte[] data = zookeeper.getData("/zknode-test", watcher, null);
+            final ZooKeeper zookeeper = new ZooKeeper("127.0.0.1", SESSION_TIMEOUT, watcher);
+            final byte[] data = zookeeper.getData("/master", watcher, null);
             value = new String(data);
             zookeeper.close();
         } catch (Exception e) {
@@ -87,10 +74,5 @@ public class ZookeeperServiceImpl implements ZookeeperService, Watcher {
         }
     }
 
-    @Override
-    public void process(WatchedEvent watchedEvent) {
-        if (watchedEvent.getState() == Event.KeeperState.SyncConnected) {
-            latch.countDown();
-        }
-    }
+
 }
