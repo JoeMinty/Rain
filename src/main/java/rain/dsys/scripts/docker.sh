@@ -1,5 +1,8 @@
 # hdfs
 # https://github.com/sequenceiq/hadoop-docker/blob/master/Dockerfile
+# http://dockone.io/article/395
+# https://kiwenlau.com/2016/06/12/160612-hadoop-cluster-docker-update/
+
 docker pull sequenceiq/hadoop-docker:2.7.1
 docker run -it sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
 
