@@ -1,6 +1,10 @@
 package rain.dsys.common;
 
+import org.omg.IOP.IOR;
+
 import java.io.*;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -149,5 +153,11 @@ public class ShellCommandUtil {
          * It is expected that the caller calls this before using handler.
          */
         void start();
+    }
+
+    public static void main(String [] args) throws InterruptedException , IOException {
+        String [] params = new String[] {"date"};
+        Result result = ShellCommandUtil.runCommand(params);
+        System.out.println(result.stdout);
     }
 }
