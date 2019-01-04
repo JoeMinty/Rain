@@ -1,10 +1,6 @@
-package rain.dsys.common;
-
-import org.omg.IOP.IOR;
+package rain.dsys.common.utils;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -12,20 +8,12 @@ import java.util.Map;
  */
 public class ShellCommandUtil {
 
-    private static final String AMBARI_SUDO = "ambari-sudo.sh";
 
-    public static Result runCommand(String[] args, Map<String, String> vars, InteractiveHandler interactiveHandler, boolean sudo)
+    public static Result runCommand(String[] args, Map<String, String> vars, InteractiveHandler interactiveHandler)
             throws IOException, InterruptedException {
 
         String[] processArgs;
-
-        if (sudo) {
-            processArgs = new String[args.length + 1];
-            processArgs[0] = AMBARI_SUDO;
-            System.arraycopy(args, 0, processArgs, 1, args.length);
-        } else {
-            processArgs = args;
-        }
+        processArgs = args;
 
         ProcessBuilder builder = new ProcessBuilder(processArgs);
 
@@ -81,7 +69,7 @@ public class ShellCommandUtil {
 
     public static Result runCommand(String[] args, Map<String, String> vars)
             throws IOException, InterruptedException {
-        return runCommand(args, vars, null, false);
+        return runCommand(args, vars, null);
     }
 
     public static Result runCommand(String[] args) throws IOException,
@@ -131,33 +119,16 @@ public class ShellCommandUtil {
 
     public interface InteractiveHandler {
 
-        /**
-         * Indicates whether this {@link InteractiveHandler} expects more queries (<code>true</code>
-         * or not (<code>false</code>)
-         *
-         * @return true if more queries are expected; false otherwise
-         */
         boolean done();
 
-        /**
-         * Given a query, returns the relative response to send to the shell command (via stdin)
-         *
-         * @param query a string containing the query that needs a response
-         * @return a string or null if no response is needed
-         */
         String getResponse(String query);
 
-        /**
-         * Starts or resets this handler.
-         * <p>
-         * It is expected that the caller calls this before using handler.
-         */
         void start();
     }
 
     public static void main(String [] args) throws InterruptedException , IOException {
         String [] params = new String[] {"date"};
         Result result = ShellCommandUtil.runCommand(params);
-        System.out.println(result.stdout);
+        System.out.println(result.getExitCode());
     }
 }
