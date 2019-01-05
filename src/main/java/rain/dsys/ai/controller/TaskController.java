@@ -13,7 +13,10 @@ public class TaskController {
 
     @RequestMapping("/task")
     public String index() throws Exception{
-        reflectUtil.run("rain.dsys.ai.service.tasks.ImageTask", "doWork");
+
+        reflectUtil.run("rain.dsys.ai.service.tasks.ImageTask", "doWork", "image");
+        reflectUtil.run("rain.dsys.ai.service.tasks.VideoTask", "doWork", "video");
+
         return "ai task";
     }
 }
