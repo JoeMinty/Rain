@@ -2,6 +2,7 @@ package rain.dsys.common;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
+import rain.dsys.common.utils.ApplicationContextUtil;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

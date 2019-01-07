@@ -30,8 +30,8 @@ public class ZookeeperServiceImpl implements ZookeeperService{
         String value = null;
         try {
             // 这里测试docker部署的zk服务
-            final ZooKeeper zookeeper = new ZooKeeper("127.0.0.1:2181", SESSION_TIMEOUT, watcher);
-            final byte[] data = zookeeper.getData("/master", watcher, null);
+            final ZooKeeper zookeeper = new ZooKeeper("47.99.247.168:2181", SESSION_TIMEOUT, watcher);
+            final byte[] data = zookeeper.getData("/zookeeper", watcher, null);
             value = new String(data);
             zookeeper.close();
         } catch (Exception e) {

@@ -9,6 +9,8 @@ import rain.dsys.common.QuartzJobs.MyJob1;
  * Quartz工具类
  * 
  * @author Allen
+ *
+ * todo 调整下结构，util都放在utils包下
  */
 public class QuartzUtil {
 
