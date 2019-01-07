@@ -28,14 +28,16 @@ public class ReflectUtil {
     /**
      * springboot 根据类名，方法名，参数反射调用正确的方法
      */
-    private void invoke(Class<?> clazz, String method, Object... args) throws InvocationTargetException, IllegalAccessException, InstantiationException {
-        Method[] methods = clazz.getMethods();
+    private void invoke(Class<?> cla, String method, Object... args) throws InvocationTargetException, IllegalAccessException, InstantiationException {
+        Object clazz = Util.getBean(cla);
+        Method[] methods = clazz.getClass().getMethods();
 
         for (Method met : methods) {
             if (StringUtils.equals(method, met.getName()) && met.getParameterCount() == args.length) {
 
                 // 正确调用方法
-                met.invoke(clazz.newInstance(), args);
+                // met.invoke(clazz.newInstance(), args);
+                met.invoke(clazz, args);
                 break;
             }
         }
