@@ -29,7 +29,7 @@ public class ReflectUtil {
      * springboot 根据类名，方法名，参数反射调用正确的方法
      */
     private void invoke(Class<?> cla, String method, Object... args) throws InvocationTargetException, IllegalAccessException, InstantiationException {
-        Object clazz = Util.getBean(cla);
+        Object clazz = ApplicationContextUtil.getBean(cla);
         Method[] methods = clazz.getClass().getMethods();
 
         for (Method met : methods) {
