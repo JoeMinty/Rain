@@ -1,4 +1,4 @@
-package rain.dsys.common.zookeeper;
+package rain.dsys.bigdata.utils.zookeeper;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
