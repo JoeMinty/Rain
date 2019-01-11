@@ -1,10 +1,11 @@
-package rain.dsys.common.zookeeper;
+package rain.dsys.bigdata.utils.zookeeper;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
 
-import rain.dsys.common.zookeeper.dao.CommonDao;
+import rain.dsys.bigdata.utils.zookeeper.dao.CommonDao;
+
 
 /**
  * ZK操作工具类

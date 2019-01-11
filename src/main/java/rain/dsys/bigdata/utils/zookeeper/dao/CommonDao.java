@@ -1,4 +1,4 @@
-package rain.dsys.common.zookeeper.dao;
+package rain.dsys.bigdata.utils.zookeeper.dao;
 
 public interface CommonDao {
 	public void create(String path, String value);
