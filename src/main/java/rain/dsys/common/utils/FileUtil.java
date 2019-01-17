@@ -28,5 +28,4 @@ public class FileUtil {
                 .map(Path::getFileName).map(Path::toString).mapToInt(version -> Integer.parseInt(version)).max().getAsInt();
     }
 
-
 }
