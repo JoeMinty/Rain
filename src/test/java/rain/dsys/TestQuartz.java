@@ -2,9 +2,8 @@ package rain.dsys;
 
 import java.util.concurrent.TimeUnit;
 
-import rain.dsys.common.QuartzJobs.MyJob1;
 import rain.dsys.common.QuartzJobs.MyJob2;
-import rain.dsys.common.QuartzUtil.QuartzUtil;
+import rain.dsys.common.utils.QuartzUtil;
 
 public class TestQuartz {
 

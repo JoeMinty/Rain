@@ -1,4 +1,4 @@
-package rain.dsys.common.QuartzUtil;
+package rain.dsys.common.quartz;
 
 import org.quartz.CronScheduleBuilder;
 import org.quartz.CronTrigger;

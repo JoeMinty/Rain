@@ -1,9 +1,9 @@
-package rain.dsys.common.QuartzUtil;
+package rain.dsys.common.utils;
 
 import java.util.UUID;
 
 import io.netty.util.internal.StringUtil;
-import rain.dsys.common.QuartzJobs.MyJob1;
+import rain.dsys.common.quartz.QuartzManager;
 
 /**
  * Quartz工具类

@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import rain.dsys.bigdata.service.HdfsService;
 
+/**
+ * hdfs rest 控制层
+ *
+ * @author Joe
+ */
 @RestController
 public class HdfsController {
 
@@ -15,5 +20,6 @@ public class HdfsController {
     public String index() {
         return hdfsService.index();
     }
+
 
 }

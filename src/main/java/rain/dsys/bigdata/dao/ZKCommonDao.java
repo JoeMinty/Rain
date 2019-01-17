@@ -1,10 +1,8 @@
-package rain.dsys.bigdata.utils.zookeeper;
+package rain.dsys.bigdata.dao;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
-
-import rain.dsys.bigdata.utils.zookeeper.dao.CommonDao;
 
 
 /**
@@ -12,7 +10,7 @@ import rain.dsys.bigdata.utils.zookeeper.dao.CommonDao;
  * 
  * @author Allen
  */
-public class ZKCommonDao implements CommonDao {
+public class ZKCommonDao {
 
 	CuratorFramework curatorFramework = null;
 
@@ -30,7 +28,6 @@ public class ZKCommonDao implements CommonDao {
 	 * @exception/throws [违例类型] [违例说明]
 	 * @see [类、类#方法、类#成员]
 	 */
-	@Override
 	public void create(String path, String value) {
 		this.create(path, value, false);
 	}
@@ -98,7 +95,6 @@ public class ZKCommonDao implements CommonDao {
 	 * @exception/throws [违例类型] [违例说明]
 	 * @see [类、类#方法、类#成员]
 	 */
-	@Override
 	public String getNodeData(String path) {
 		Stat stat = new Stat();
 		String result = "";
@@ -120,7 +116,6 @@ public class ZKCommonDao implements CommonDao {
 	 * @exception/throws [违例类型] [违例说明]
 	 * @see [类、类#方法、类#成员]
 	 */
-	@Override
 	public void deleteNode(String path) {
 		try {
 			curatorFramework.delete().deletingChildrenIfNeeded().forPath(path);
@@ -139,7 +134,6 @@ public class ZKCommonDao implements CommonDao {
 	 * @exception/throws [违例类型] [违例说明]
 	 * @see [类、类#方法、类#成员]
 	 */
-	@Override
 	public void updateNode(String path, String value) {
 		try {
 			curatorFramework.setData().forPath(path, value.getBytes());
