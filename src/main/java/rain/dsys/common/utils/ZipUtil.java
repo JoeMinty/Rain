@@ -20,13 +20,13 @@ import java.util.zip.ZipOutputStream;
 public class ZipUtil {
 
 
-    private static void zip(ZipOutputStream out, Path path, String parentPath) throws IOException{
+    private static void zip(ZipOutputStream out, Path path, String parentPath) throws IOException {
         File file = path.toFile();
 
         if (file.isFile()) {
 
             // input file
-            try (FileInputStream in = new FileInputStream(file);){
+            try (FileInputStream in = new FileInputStream(file);) {
 
                 out.putNextEntry(new ZipEntry(parentPath));
 
@@ -45,27 +45,26 @@ public class ZipUtil {
 
         if (file.isDirectory()) {
 
-           if (file.listFiles().length == 0) {
-               out.putNextEntry(new ZipEntry(StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + file.getName()));
-           }
+            if (file.listFiles().length == 0) {
+                out.putNextEntry(new ZipEntry(StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + file.getName()));
+            }
 
-           for (File sub: file.listFiles()) {
-               zip(out, sub.toPath(), StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + sub.getName());
-           }
+            for (File sub : file.listFiles()) {
+                zip(out, sub.toPath(), StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + sub.getName());
+            }
 
         }
     }
 
 
     /**
-     * 打包zip
+     * zip打包(自动区分文件和目录)
      *
-     * @param source       资源名
-     * @param destination  zip名
+     * @param source      资源名
+     * @param destination zip名
      */
     public static void zip(String source, String destination) throws IOException {
         Path path = Paths.get(source);
-
         // output file
         ZipOutputStream out = new ZipOutputStream(new FileOutputStream(destination));
         zip(out, path, "");
@@ -73,6 +72,9 @@ public class ZipUtil {
     }
 
 
+    /**
+     * 解压到当前路径
+     */
     public static void unzip() {
 
     }
@@ -81,7 +83,7 @@ public class ZipUtil {
     /**
      * 解压zip包到具体路径
      */
-    public static void unzip(String dest) {
+    public static void unzip(String destination) {
 
     }
 
