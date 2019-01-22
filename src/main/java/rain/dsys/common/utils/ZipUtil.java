@@ -1,9 +1,13 @@
 package rain.dsys.common.utils;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -15,37 +19,59 @@ import java.util.zip.ZipOutputStream;
 
 public class ZipUtil {
 
-    /**
-     * 将某个目录打包成zip
-     *
-     * @param directory 目录名
-     */
-    public static void createZip(String directory) throws IOException {
 
-        File file = new File(directory);
-        File[] files = file.listFiles();
+    private static void zip(ZipOutputStream out, Path path, String parentPath) throws IOException{
+        File file = path.toFile();
 
-        // input file
-        FileInputStream in = new FileInputStream(file);
+        if (file.isFile()) {
 
-        // out put file
-        ZipOutputStream out = new ZipOutputStream(new FileOutputStream(new File(file, "file.jar")));
+            // input file
+            try (FileInputStream in = new FileInputStream(file);){
 
-        // name the file inside the zip  file
-        out.putNextEntry(new ZipEntry(files[0].getName()));
+                out.putNextEntry(new ZipEntry(parentPath));
 
-        // buffer size
-        byte[] b = new byte[1024];
-        int count;
+                // buffer size
+                byte[] b = new byte[1024];
+                int count;
 
-        while ((count = in.read(b)) > 0) {
-            System.out.println();
-            out.write(b, 0, count);
+                while ((count = in.read(b)) > 0) {
+                    out.write(b, 0, count);
+                }
+                out.closeEntry();
+            }
+
+
         }
-        out.close();
-        in.close();
 
+        if (file.isDirectory()) {
+
+           if (file.listFiles().length == 0) {
+               out.putNextEntry(new ZipEntry(StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + file.getName()));
+           }
+
+           for (File sub: file.listFiles()) {
+               zip(out, sub.toPath(), StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + sub.getName());
+           }
+
+        }
     }
+
+
+    /**
+     * 打包zip
+     *
+     * @param source       资源名
+     * @param destination  zip名
+     */
+    public static void zip(String source, String destination) throws IOException {
+        Path path = Paths.get(source);
+
+        // output file
+        ZipOutputStream out = new ZipOutputStream(new FileOutputStream(destination));
+        zip(out, path, "");
+        out.close();
+    }
+
 
     public static void unzip() {
 
