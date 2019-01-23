@@ -2,10 +2,7 @@ package rain.dsys.common.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.zip.ZipEntry;
@@ -50,7 +47,7 @@ public class ZipUtil {
             }
 
             for (File sub : file.listFiles()) {
-                zip(out, sub.toPath(), StringUtils.equals("", parentPath) ? file.getName() : parentPath + File.separator + sub.getName());
+                zip(out, sub.toPath(), StringUtils.equals("", parentPath) ? sub.getName() : parentPath + File.separator + sub.getName());
             }
 
         }
@@ -75,7 +72,9 @@ public class ZipUtil {
     /**
      * 解压到当前路径
      */
-    public static void unzip() {
+    public static void unZip(File srcFile, String destDirPath) throws RuntimeException {
+
+
 
     }
 
@@ -85,6 +84,10 @@ public class ZipUtil {
      */
     public static void unzip(String destination) {
 
+    }
+
+    public static void main(String[] args) throws IOException{
+        zip("/Users/lulinfeng/images", "/Users/lulinfeng/hello.zip");
     }
 
 }
