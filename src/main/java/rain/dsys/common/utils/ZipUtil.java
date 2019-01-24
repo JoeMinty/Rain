@@ -6,6 +6,7 @@ import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 /**
@@ -70,24 +71,43 @@ public class ZipUtil {
 
 
     /**
-     * 解压到当前路径
+     * 解压zip包
      */
-    public static void unZip(File srcFile, String destDirPath) throws RuntimeException {
+    public static void unZip(String resDir, String destDir) throws IOException {
 
+        File dest = new File(destDir);
 
+        byte[] buff = new byte[1024];
+
+        ZipInputStream zis = new ZipInputStream(new FileInputStream(resDir));
+        ZipEntry zipEntry;
+        while((zipEntry = zis.getNextEntry()) != null) {
+            File file = new File(dest, zipEntry.getName());
+
+            if (!file.getParentFile().exists() && !file.getParentFile().mkdirs()) {
+                throw new IOException("directory is not exists");
+            }
+
+            if (zipEntry.isDirectory()) {
+                file.mkdir();
+            } else {
+                try (FileOutputStream fos = new FileOutputStream(file)){
+                    int count;
+
+                    while ((count = zis.read(buff)) > 0) {
+                        fos.write(buff, 0, count);
+                    }
+                }
+
+            }
+        }
 
     }
 
-
-    /**
-     * 解压zip包到具体路径
-     */
-    public static void unzip(String destination) {
-
-    }
 
     public static void main(String[] args) throws IOException{
-        zip("/Users/lulinfeng/images", "/Users/lulinfeng/hello.zip");
+//        zip("/Users/joe/images", "/Users/joe/hello.zip");
+//        unZip("/Users/joe/aa/hello.zip", "/Users/joe/aa/images");
     }
 
 }
