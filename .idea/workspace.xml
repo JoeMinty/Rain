@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb4034aa-2ecd-4108-ac6b-212fe384abd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rain.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +39,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Dockerfile" value="1" />
           <entry key="class" value="7" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="79" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="80" />
           <entry key="md" value="4" />
-          <entry key="sh" value="2" />
+          <entry key="sh" value="4" />
           <entry key="xml" value="7" />
           <entry key="yaml" value="1" />
         </counts>
@@ -49,21 +52,22 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="79" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="JAVA" value="80" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="7" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Dockerfile" value="18" />
           <entry key="dummy" value="18" />
           <entry key="java" value="5205" />
           <entry key="md" value="172" />
-          <entry key="sh" value="60" />
-          <entry key="xml" value="51" />
+          <entry key="sh" value="62" />
+          <entry key="xml" value="99" />
           <entry key="yaml" value="13" />
         </counts>
       </usages-collector>
@@ -71,8 +75,8 @@
         <counts>
           <entry key="JAVA" value="5205" />
           <entry key="Markdown" value="172" />
-          <entry key="PLAIN_TEXT" value="78" />
-          <entry key="XML" value="51" />
+          <entry key="PLAIN_TEXT" value="98" />
+          <entry key="XML" value="99" />
           <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
@@ -93,10 +97,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/QuartzUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/docker.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rain.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/compile.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/netty/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -105,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-16">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#284#285#0" expanded="true" />
@@ -118,8 +154,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="285">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,11 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+            <state relative-caret-position="145">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -201,7 +240,6 @@
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/ReflectUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/QuartzUtil/QuartzUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ShellCommandUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/controller/HdfsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/zookeeper/ZKClientUtils.java" />
@@ -213,7 +251,10 @@
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ZipUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/compile.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/Dockerfile" />
       </list>
     </option>
   </component>
@@ -303,15 +344,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
               <item name="bigdata" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,26 +354,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dsys" type="462c0819:PsiDirectoryNode" />
               <item name="bigdata" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="dockerfike" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,7 +365,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548510773873" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548603545471" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -441,9 +454,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="43" width="1383" height="857" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30872482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30872482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -459,7 +471,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49962714" visible="true" weight="0.3503268" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49962714" visible="true" weight="0.3503268" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003728" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5048733" side_tool="true" visible="true" weight="0.32960477" />
@@ -484,20 +496,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/HdfsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar!/org/apache/zookeeper/ZooKeeper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/zookeeper.sh" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,17 +504,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/docker.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="68" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/SparkServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -562,6 +556,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,11 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1179" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/ZookeeperService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -669,13 +661,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/netty/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -838,7 +823,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#284#285#0" expanded="true" />
@@ -847,19 +832,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        <state relative-caret-position="145">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/compile.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/netty/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/docker.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
