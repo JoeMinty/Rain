@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb4034aa-2ecd-4108-ac6b-212fe384abd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +43,7 @@
           <entry key="class" value="7" />
           <entry key="iml" value="3" />
           <entry key="java" value="80" />
-          <entry key="md" value="4" />
+          <entry key="md" value="5" />
           <entry key="sh" value="4" />
           <entry key="xml" value="7" />
           <entry key="yaml" value="1" />
@@ -55,7 +54,7 @@
           <entry key="CLASS" value="7" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JAVA" value="80" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="7" />
           <entry key="YAML" value="1" />
@@ -66,7 +65,7 @@
           <entry key="Dockerfile" value="18" />
           <entry key="dummy" value="18" />
           <entry key="java" value="5265" />
-          <entry key="md" value="172" />
+          <entry key="md" value="203" />
           <entry key="sh" value="62" />
           <entry key="xml" value="99" />
           <entry key="yaml" value="13" />
@@ -75,7 +74,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="5265" />
-          <entry key="Markdown" value="172" />
+          <entry key="Markdown" value="203" />
           <entry key="PLAIN_TEXT" value="98" />
           <entry key="XML" value="99" />
           <entry key="YAML" value="13" />
@@ -85,7 +84,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ZipUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
@@ -93,6 +92,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="225">
+                <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -156,7 +167,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/HdfsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/HdfsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/HdfsService.java" />
@@ -205,6 +215,7 @@
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/dockerfike/Dockerfile" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/HdfsUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -297,16 +308,6 @@
               <item name="dsys" type="462c0819:PsiDirectoryNode" />
               <item name="bigdata" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dsys" type="462c0819:PsiDirectoryNode" />
-              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -315,7 +316,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548688772784" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548688834867" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -447,7 +448,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/zookeeper.sh" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -793,6 +793,16 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

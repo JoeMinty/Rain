@@ -13,6 +13,8 @@ Maybe life is a journey.This project create on a rainy night.
 
 # part3 
 ## module common
+    1.继承beam，提供统一计算引擎
+
 
 # part4
 ## module shell scripts
