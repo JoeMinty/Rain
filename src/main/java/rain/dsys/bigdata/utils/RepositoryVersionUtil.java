@@ -1,7 +1,5 @@
 package rain.dsys.bigdata.utils;
 
-import com.alibaba.druid.VERSION;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
