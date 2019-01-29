@@ -16,11 +16,23 @@ import java.net.URI;
  */
 public class HdfsUtil {
 
+    public static void main(String[] args) {
+        // 获取配置信息
+        Configuration conf = new Configuration();
+        String uri = "hdfs://192.168.174.128:9000";
+        try {
+            copyFile(conf, uri, "/Users/joe/hello.zip", "/hdfstext/");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /**
      * 上传本地文件到hdfs
      */
-    public static void copyFile(Configuration conf , String uri , String local, String remote) throws IOException {
+    public static void copyFile(Configuration conf, String uri, String local, String remote) throws IOException {
         FileSystem fs = FileSystem.get(URI.create(uri), conf);
         fs.copyFromLocalFile(new Path(local), new Path(remote));
         fs.close();
