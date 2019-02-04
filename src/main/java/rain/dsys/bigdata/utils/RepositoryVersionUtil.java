@@ -40,4 +40,12 @@ public class RepositoryVersionUtil {
         // 当前版本所做的增删改操作目录
     }
 
+    /**
+     * 生成当前版本的zip包目录，需要合并实体的crud操作
+     *
+     */
+    public static void genRepositoryOrigin() {
+
+    }
+
 }
