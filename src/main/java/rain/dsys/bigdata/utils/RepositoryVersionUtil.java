@@ -1,6 +1,7 @@
 package rain.dsys.bigdata.utils;
 
-import java.io.File;
+import rain.dsys.common.utils.ZipUtil;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,8 +15,6 @@ import java.util.regex.Pattern;
  * @author Joe
  */
 public class RepositoryVersionUtil {
-
-    private static final String ADD_DIR = "add";
 
     /**
      * 检查是否是目录
@@ -49,7 +48,7 @@ public class RepositoryVersionUtil {
     /**
      * 返回目录中对应最大的版本
      */
-    public static Integer getMaxVersion(String path) throws IOException {
+    public static  Integer getMaxVersion(String path) throws IOException {
         return Files.list(Paths.get(path)).filter(RepositoryVersionUtil::checkDir).filter(RepositoryVersionUtil::checkRepositoryDir)
                 .map(Path::getFileName).map(Path::toString).mapToInt(version -> Integer.parseInt(version)).max().getAsInt();
     }
@@ -58,26 +57,50 @@ public class RepositoryVersionUtil {
     /**
      * 生成本地仓库新版本目录
      *
-     * @param versionId  本地仓库版本号
      */
-    public static void genLocalNewRepository(String path, int versionId){
-        String versionPath = path + File.separator + versionId + File.separator + ADD_DIR;
-        System.out.println("new " + versionPath);
+    public static synchronized void genLocalNewRepository(String path){
+        System.out.println("new " + path);
         try {
-            Files.createDirectories(Paths.get(versionPath));
+            Files.createDirectories(Paths.get(path));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    /**
-     * 生成当前版本的zip包目录，需要合并实体的crud操作
-     *
-     */
-    public static void genRepositoryOrigin() {
-        // 上版本的zip解压出来的目录
 
-        // 当前版本所做的增删改操作目录
+    /**
+     * 
+     *
+     * @param srcPath
+     * @param desPath
+     */
+    public static synchronized void genRepository(String srcPath, String desPath) throws IOException{
+        genRepositoryOrigin(srcPath, desPath);
+        dealAddDir();
     }
 
+
+    /**
+     * 生成当前版本的zip包目录，需要合并实体的crud操作
+     */
+    public static void genRepositoryOrigin(String srcPath, String desPath) throws IOException{
+
+        if (ZipUtil.checkZip(srcPath)) {
+            // 上版本的zip解压出来的目录
+        } else {
+            // 直接处理origin目录
+            Files.copy(Paths.get(srcPath), Paths.get(desPath));
+        }
+
+        // 当前版本所做的增删改操作目录
+
+    }
+
+
+    /**
+     * 处理add目录中的文件
+     */
+    public static void dealAddDir() {
+        System.out.println("处理add目录中的文件");
+    }
 }

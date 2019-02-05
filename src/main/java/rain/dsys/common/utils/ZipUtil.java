@@ -3,9 +3,11 @@ package rain.dsys.common.utils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
@@ -16,6 +18,8 @@ import java.util.zip.ZipOutputStream;
  */
 
 public class ZipUtil {
+
+    private static final Long THRESHOLD_SIZE = 1024L * 1024L;
 
 
     private static void zip(ZipOutputStream out, Path path, String parentPath) throws IOException {
@@ -102,6 +106,21 @@ public class ZipUtil {
             }
         }
 
+    }
+
+
+    /**
+     * 检查文件是否为大文件
+     *
+     * @return
+     */
+    public static boolean checkZip(String path) throws IOException {
+        System.out.println("zip path ===" + path);
+        if (Files.size(Paths.get(path)) > THRESHOLD_SIZE) {
+            return true;
+        }
+
+        return false;
     }
 
 
