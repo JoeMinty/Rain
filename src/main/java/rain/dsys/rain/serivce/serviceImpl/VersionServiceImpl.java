@@ -39,8 +39,9 @@ public class VersionServiceImpl implements VersionService {
      */
     private static void genLocalRepository(String path, int versionId) throws IOException{
         String desPath = path + File.separator + versionId + File.separator + ORIGIN_DIR;
-        String srcPath = path + File.separator + (--versionId) + File.separator + ORIGIN_DIR;
-        RepositoryVersionUtil.genRepository(srcPath, desPath);
+        String preVersionPath = path + File.separator + (--versionId);
+        String srcPath = preVersionPath + File.separator + ORIGIN_DIR;
+        RepositoryVersionUtil.genRepository(preVersionPath, srcPath, desPath);
     }
 
     public static void main(String[] args) {

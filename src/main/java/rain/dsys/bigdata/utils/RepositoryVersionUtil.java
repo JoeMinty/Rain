@@ -2,6 +2,7 @@ package rain.dsys.bigdata.utils;
 
 import rain.dsys.common.utils.ZipUtil;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -74,8 +75,8 @@ public class RepositoryVersionUtil {
      * @param srcPath
      * @param desPath
      */
-    public static synchronized void genRepository(String srcPath, String desPath) throws IOException{
-        genRepositoryOrigin(srcPath, desPath);
+    public static synchronized void genRepository(String preVersionPath, String srcPath, String desPath) throws IOException{
+        genRepositoryOrigin(preVersionPath, srcPath, desPath);
         dealAddDir();
     }
 
@@ -83,12 +84,15 @@ public class RepositoryVersionUtil {
     /**
      * 生成当前版本的zip包目录，需要合并实体的crud操作
      */
-    public static void genRepositoryOrigin(String srcPath, String desPath) throws IOException{
+    public static void genRepositoryOrigin(String preVersionPath, String srcPath, String desPath) throws IOException{
 
-        if (ZipUtil.checkZip(srcPath)) {
+        String zipName = preVersionPath + File.separator + "hello.zip";
+        if (ZipUtil.checkZip(zipName)) {
             // 上版本的zip解压出来的目录
+            System.out.println("直接拷贝zip");
         } else {
             // 直接处理origin目录
+            System.out.println("直接处理目录");
             Files.copy(Paths.get(srcPath), Paths.get(desPath));
         }
 

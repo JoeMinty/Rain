@@ -5,11 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ZipUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ZipUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/rain/constant/VersionConstant.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/rain/serivce/serviceImpl/VersionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/rain/serivce/serviceImpl/VersionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rain/dsys/bigdata/utils/RepositoryVersionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rain/dsys/bigdata/utils/RepositoryVersionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rain/dsys/rain/constant/VersionConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rain/dsys/rain/serivce/serviceImpl/VersionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rain/dsys/rain/serivce/serviceImpl/VersionServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +44,7 @@
           <entry key="Dockerfile" value="1" />
           <entry key="class" value="10" />
           <entry key="iml" value="3" />
-          <entry key="java" value="95" />
+          <entry key="java" value="96" />
           <entry key="md" value="5" />
           <entry key="sh" value="4" />
           <entry key="xml" value="8" />
@@ -59,7 +55,7 @@
         <counts>
           <entry key="CLASS" value="10" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="95" />
+          <entry key="JAVA" value="96" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="8" />
@@ -70,7 +66,7 @@
         <counts>
           <entry key="Dockerfile" value="18" />
           <entry key="dummy" value="18" />
-          <entry key="java" value="7903" />
+          <entry key="java" value="8137" />
           <entry key="md" value="211" />
           <entry key="sh" value="62" />
           <entry key="xml" value="123" />
@@ -79,7 +75,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7903" />
+          <entry key="JAVA" value="8137" />
           <entry key="Markdown" value="211" />
           <entry key="PLAIN_TEXT" value="98" />
           <entry key="XML" value="123" />
@@ -93,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ZipUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+            <state relative-caret-position="192">
+              <caret line="118" column="68" selection-start-line="118" selection-start-column="68" selection-end-line="118" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#zip#0;class#ZipUtil#0" />
@@ -107,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+            <state relative-caret-position="342">
+              <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
@@ -125,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/rain/serivce/serviceImpl/VersionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="263">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -391,7 +387,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549377076555" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549379729278" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -534,7 +530,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49962714" weight="0.3503268" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49962714" weight="0.35031846" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003728" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5048733" side_tool="true" visible="true" weight="0.32960477" />
@@ -864,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="670" column="23" selection-start-line="670" selection-start-column="23" selection-end-line="670" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/rain/serivce/VersionService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -899,10 +888,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="2330" column="23" selection-start-line="2330" selection-start-column="23" selection-end-line="2330" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/rain/serivce/serviceImpl/VersionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="263">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -911,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/utils/RepositoryVersionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+        <state relative-caret-position="342">
+          <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
@@ -927,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ZipUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+        <state relative-caret-position="192">
+          <caret line="118" column="68" selection-start-line="118" selection-start-column="68" selection-end-line="118" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#zip#0;class#ZipUtil#0" />

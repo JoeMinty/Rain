@@ -116,6 +116,7 @@ public class ZipUtil {
      */
     public static boolean checkZip(String path) throws IOException {
         System.out.println("zip path ===" + path);
+        System.out.println("size === " + Files.size(Paths.get(path)));
         if (Files.size(Paths.get(path)) > THRESHOLD_SIZE) {
             return true;
         }
