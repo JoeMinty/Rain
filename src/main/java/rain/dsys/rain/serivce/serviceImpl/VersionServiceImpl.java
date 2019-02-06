@@ -38,10 +38,13 @@ public class VersionServiceImpl implements VersionService {
      * 生成本地仓库
      */
     private static void genLocalRepository(String path, int versionId) throws IOException{
-        String desPath = path + File.separator + versionId + File.separator + ORIGIN_DIR;
+
+        String curVersionPath = path + File.separator + versionId;
         String preVersionPath = path + File.separator + (--versionId);
         String srcPath = preVersionPath + File.separator + ORIGIN_DIR;
-        RepositoryVersionUtil.genRepository(preVersionPath, srcPath, desPath);
+        String desPath = curVersionPath + File.separator + ORIGIN_DIR;
+        String addPath = curVersionPath + File.separator + ADD_DIR;
+        RepositoryVersionUtil.genRepository(preVersionPath, addPath, srcPath, desPath);
     }
 
     public static void main(String[] args) {
