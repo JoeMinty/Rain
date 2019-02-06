@@ -79,6 +79,7 @@ public class RepositoryVersionUtil {
     public static synchronized void genRepository(String preVersionPath, String addPath, String srcPath, String desPath) throws IOException{
         genRepositoryOrigin(preVersionPath, addPath, srcPath, desPath);
         dealAddDir();
+        dealDel();
     }
 
 
@@ -107,5 +108,13 @@ public class RepositoryVersionUtil {
      */
     public static void dealAddDir() {
         System.out.println("处理add目录中的文件");
+    }
+
+
+    /**
+     * 处理删除的文件
+     */
+    private static void dealDel() {
+        System.out.println("处理删除的文件");
     }
 }
