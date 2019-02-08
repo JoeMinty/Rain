@@ -116,5 +116,7 @@ public class RepositoryVersionUtil {
      */
     private static void dealDel() {
         System.out.println("处理删除的文件");
+        // 处理日志文件中的每一行记录，后续改成数据库持久化
+
     }
 }
