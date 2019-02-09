@@ -1,10 +1,10 @@
 package rain.dsys.bigdata.utils;
 
+import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
 import rain.dsys.common.utils.ZipUtil;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -114,9 +114,17 @@ public class RepositoryVersionUtil {
     /**
      * 处理删除的文件
      */
-    private static void dealDel() {
+    private static void dealDel(){
         System.out.println("处理删除的文件");
         // 处理日志文件中的每一行记录，后续改成数据库持久化
+        JSONObject json = new JSONObject(true);
+
+        try (BufferedReader fis = new BufferedReader(new FileReader("/Users/lulinfeng/datasets/tmp.log"))){
+
+
+        } catch (IOException e) {
+
+        }
 
     }
 }
