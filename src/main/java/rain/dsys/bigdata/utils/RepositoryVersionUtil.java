@@ -120,11 +120,20 @@ public class RepositoryVersionUtil {
         JSONObject json = new JSONObject(true);
 
         try (BufferedReader fis = new BufferedReader(new FileReader("/Users/lulinfeng/datasets/tmp.log"))){
-
+            String line = "";
+            while ((line = fis.readLine()) != null) {
+                if (line.startsWith("del")) {
+                    System.out.println(line);
+                }
+            }
 
         } catch (IOException e) {
 
         }
 
+    }
+
+    public static void main(String[] args) {
+        dealDel();
     }
 }
