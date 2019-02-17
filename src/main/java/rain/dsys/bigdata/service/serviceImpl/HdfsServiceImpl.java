@@ -10,4 +10,9 @@ public class HdfsServiceImpl implements HdfsService {
     public String index() {
         return "hdfs service...";
     }
+
+    @Override
+    public void uploadBigdata() {
+
+    }
 }

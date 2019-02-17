@@ -6,4 +6,6 @@ import org.springframework.stereotype.Service;
 public interface HdfsService {
 
     String index();
+
+    void uploadBigdata();
 }
