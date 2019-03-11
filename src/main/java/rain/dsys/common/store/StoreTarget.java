@@ -1,8 +1,12 @@
 package rain.dsys.common.store;
 
 public interface StoreTarget {
-    void storeTargetDataset();
 
-    void storeTargetModel();
+    void storeTargetDataset(Object obj);
 
+    void storeTargetModel(Object obj);
+
+    void storeTargetElse(Object obj);
+
+    void storeMedium(Object obj);
 }

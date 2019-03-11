@@ -1,8 +1,5 @@
 package rain.dsys.common.store;
 
-public abstract class StoreFactory implements  {
+public abstract class StoreFactory implements StoreTarget{
 
-    StoreMedium createStoreMedium();
-
-    StoreTarget createStoreTarget();
 }
