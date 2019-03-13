@@ -8,5 +8,4 @@ public interface StoreTarget {
 
     void storeTargetElse(Object obj);
 
-    void storeMedium(Object obj);
 }
