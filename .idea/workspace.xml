@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb4034aa-2ecd-4108-ac6b-212fe384abd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +42,7 @@
           <entry key="Dockerfile" value="1" />
           <entry key="class" value="13" />
           <entry key="iml" value="3" />
-          <entry key="java" value="130" />
+          <entry key="java" value="132" />
           <entry key="md" value="5" />
           <entry key="properties" value="1" />
           <entry key="sh" value="4" />
@@ -53,7 +54,7 @@
         <counts>
           <entry key="CLASS" value="13" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="130" />
+          <entry key="JAVA" value="132" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="1" />
@@ -65,7 +66,7 @@
         <counts>
           <entry key="Dockerfile" value="18" />
           <entry key="dummy" value="23" />
-          <entry key="java" value="10270" />
+          <entry key="java" value="10674" />
           <entry key="md" value="211" />
           <entry key="sh" value="62" />
           <entry key="xml" value="123" />
@@ -74,7 +75,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10270" />
+          <entry key="JAVA" value="10674" />
           <entry key="Markdown" value="211" />
           <entry key="PLAIN_TEXT" value="103" />
           <entry key="XML" value="123" />
@@ -107,36 +108,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="46">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/UploaderB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/UploaderA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/Uploader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -183,8 +205,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -206,8 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ApplicationContextUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/ReflectUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/QuartzUtil/QuartzUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/bigdata/service/serviceImpl/ZookeeperServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/utils/ShellCommandUtil.java" />
@@ -255,8 +275,10 @@
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/store/StoreImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/ai/controller/TaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/druid/DruidConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/Uploader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/UploaderA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/UploaderB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java" />
       </list>
     </option>
   </component>
@@ -367,6 +389,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dsys" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="Uploader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dsys" type="462c0819:PsiDirectoryNode" />
               <item name="druid" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,7 +416,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553010023648" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553096127966" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -392,6 +425,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="rain.dsys.common.factory.Uploader" />
       <recent name="rain.dsys.common.countdown" />
       <recent name="rain.dsys.ai.tasks" />
     </key>
@@ -566,16 +600,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rain.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/scripts/docker.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.3/hadoop-common-2.7.3.jar!/org/apache/hadoop/fs/FileSystem.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -946,17 +970,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/Uploader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/UploaderA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/Uploader/UploaderB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rain/dsys/common/factory/UploadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
