@@ -122,11 +122,30 @@ public class ZipUtil {
 
         return false;
     }
+    
+    public static void readFromZip(String file, String fileName, String resFileName) throws IOException {
+        InputStream in = null;
+        try {
+            ZipFile zf = new ZipFile(file);
+            ZipEntry ze = zf.getEntry(fileName);
+            in = zf.getInputStream(ze);
+            Path path = Paths.get(resFileName);
+            if (!path.toFile().exists()) {
+                Files.copy(in, path);
+            }
+
+        } finally {
+            if (in != null) {
+                in.close();
+            }
+        }
+    }
 
 
     public static void main(String[] args) throws IOException{
 //        zip("/Users/joe/images", "/Users/joe/hello.zip");
 //        unZip("/Users/joe/aa/hello.zip", "/Users/joe/aa/images");
+//        readFromZip("/Users/joe/aa/hello.zip", "images/joe.jpeg", "/Users/joe/aa/images/joe.jpeg");
     }
 
 }
