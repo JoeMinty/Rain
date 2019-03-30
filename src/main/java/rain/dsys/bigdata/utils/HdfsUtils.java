@@ -313,7 +313,7 @@ public class HdfsUtils {
     }
 
     /**
-     * 仅将本地目录下的文件或子目录上传到指定目录
+     * 本地目录下的文件或子目录上传到指定目录
      *
      * @param hdfsPathName      上传到hdfs的路径
      * @param basePath          hdfs地址
