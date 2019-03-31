@@ -1,7 +1,13 @@
+package rain.dsys.common.utils;
 
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * 配置项工具类
+ *
+ * @author Joe
+ */
 public class ConfigUtil {
   private static Properties properties;
 
