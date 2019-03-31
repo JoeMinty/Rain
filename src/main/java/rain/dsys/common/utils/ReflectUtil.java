@@ -1,4 +1,4 @@
-package rain.dsys.common;
+package rain.dsys.common.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
