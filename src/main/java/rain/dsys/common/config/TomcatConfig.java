@@ -1,13 +1,22 @@
 package rain.dsys.common.config;
 
+import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
+import org.apache.tomcat.util.descriptor.web.SecurityCollection;
+import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @author Joe
+ *
+ * http 转 https
+ */
 @Configuration
 public class TomcatConfig {
+
   @Bean
   public ServletWebServerFactory servletContainer() {
       TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
@@ -17,6 +26,7 @@ public class TomcatConfig {
               securityConstraint.setUserConstraint("CONFIDENTIAL");
               SecurityCollection collection = new SecurityCollection();
               collection.addPattern("/*");
+
               securityConstraint.addCollection(collection);
               context.addConstraint(securityConstraint);
           }
