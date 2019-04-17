@@ -123,6 +123,7 @@ public class ZipUtil {
         return false;
     }
     
+    /** 不解压直接从zip包中定位响应子文件 */
     public static void readFromZip(String file, String fileName, String resFileName) throws IOException {
         InputStream in = null;
         try {
