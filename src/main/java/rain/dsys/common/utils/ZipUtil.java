@@ -140,6 +140,25 @@ public class ZipUtil {
             }
         }
     }
+    
+    /** 防止zip炸弹 */
+    public static long getZipTrueSize(String filePath) {
+        long size = 0;
+        ZipFile f;
+        try {
+            f = new ZipFile(filePath);
+
+            Enumeration<? extends ZipEntry> en = f.entries();
+            while (en.hasMoreElements()) {
+                size += en.nextElement().getSize();
+
+                System.out.println("size {}"+size);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return size;
+    }
 
 
     public static void main(String[] args) throws IOException{
