@@ -77,5 +77,12 @@ public class HdfsUtil {
         fs.close();
     }
 
-
+    /**
+     * hdfs系统间目录拷贝
+     */
+    public static void copyDirOnRemote(final Configuration conf, String from, String to) throws IOException {
+        Path src = new Path(from);
+        Path dst = new Path(to);
+        FileUtil.copy(src.getFileSystem(conf), src, dst.getFileSystem(conf), dst, false, conf);
+    }
 }
