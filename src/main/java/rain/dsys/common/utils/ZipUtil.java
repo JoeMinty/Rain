@@ -83,6 +83,10 @@ public class ZipUtil {
         byte[] buff = new byte[1024];
 
         ZipInputStream zis = new ZipInputStream(new FileInputStream(resDir));
+        
+        // try (ZipInputStream zis = new ZipInputStream(new FileInputStream(resDir), Charset.forName("GBK"))) {
+        //   zis.closeEntry();
+        //}
         ZipEntry zipEntry;
         while((zipEntry = zis.getNextEntry()) != null) {
             File file = new File(dest, zipEntry.getName());
@@ -159,6 +163,20 @@ public class ZipUtil {
             e.printStackTrace();
         }
         return size;
+    }
+    
+    /** 遍历zip中的所有文件 */
+    public static void iteratorZip(String filePath) {
+        try {
+            ZipFile zf = new ZipFile(filePath);
+            List<ZipEntry> list = zf.stream().filter(item ->  !item.isDirectory()).collect(Collectors.toList());
+            list.forEach(item -> System.out.println(item.getName()));
+            zf.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finaly {
+            
+        }
     }
 
 
