@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+  <Properties>
+    <property name="LOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss}] %-5level %class{36} %L %M - %msg%xEx%n" />
+    <property name="FILE_PATH" value="/var/log/logs" />
+    <property name="FILE_NAME" value="rain" />
+  </Properties>
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+    </Console>
+
+    <RollingFile name="RollingFileInfo" fileName="${FILE_PATH}/rain.log" immediateFlush="false"
+                 filePattern="${FILE_PATH}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
+
+      <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+      <Policies>
+        <SizeBasedTriggeringPolicy size="5MB" />
+        <TimeBasedTriggeringPolicy interval="10" modulate="true" />
+      </Policies>
+      <DefaultRolloverStrategy max="15"/>
+    </RollingFile>
+
+  </Appenders>
+
+  <Loggers>
+    <Logger name="dsrain" level="trace" additivity="true">
+      <AppenderRef ref="AsyncAppender"/>
+    </Logger>
+
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+      <appender-ref ref="RollingFileInfo"/>
+    </Root>
+  </Loggers>
+</Configuration>
+
