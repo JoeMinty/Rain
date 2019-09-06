@@ -187,7 +187,7 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <!-- 需要兼容已有junit4 UT代码的增加vintage的依赖，全新的服务不需要-->
+    <!-- 需要兼容已有junit4 UT代码的增加vintage的依赖 -->
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
